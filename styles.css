@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Signika Negative', sans-serif;
+}
+img {
+  border: 0;
+}
+
+.logo {
+  width: 70px;
+  margin: 5px;
+  align-self: center;
+}
+.navbar {
+  vertical-align: top;
+  background-color: #114b5f;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  text-decoration: none;
+  color: #e4fde1;
+
+  font-size: 30px;
+  align-self: center;
+}
+.mid-home-office {
+  width: 50vw;
+}
+.middle {
+  display: flex;
+  margin: 0;
+}
+.middle-info {
+  background-color: #e4572e;
+  color: #e4fde1;
+}
