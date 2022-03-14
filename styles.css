@@ -6,49 +6,72 @@ body {
 img {
   border: 0;
 }
-
-.logo {
-  width: 70px;
-  margin: 5px;
-  align-self: center;
+.nav-container {
+  height: 100vh;
+  width: 20vw;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
 }
 .navbar {
-  vertical-align: top;
   background-color: #48424d;
-  width: 100%;
+  height: 100vh;
+  width: 20vw;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  position: fixed;
 }
-a {
+.logo {
+  width: 150px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  box-shadow: 10px 10px 5px #943b27;
+  opacity: 0.85;
+}
+.logo:hover {
+  width: 175px;
+  box-shadow: 10px 10px 5px #943b27;
+}
+.nav-links {
   text-decoration: none;
   color: #fcf7ee;
-
   font-size: 30px;
+  display: flex;
   align-self: center;
+}
+.nav-links:hover {
+  color: #dd7f40;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 3px #943b27;
+  font-size: 35px;
 }
 
 .middle-img {
-  height: 90vh;
+  height: 100vh;
+  width: 80vw;
   background-image: url(./images/home-office.jpeg);
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
   z-index: 0;
+  display: inline-block;
 }
-.text-section1 {
+/* .text-section1 {
   position: absolute;
-  left: 25px;
+  left: 50px;
   top: 100px;
   z-index: 1;
-  background-color: #f0d6a8;
-  width: 500px;
+  background-color: #f1a27e;
+  width: 530px;
   height: 200px;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .top-left {
   position: absolute;
-  left: 25px;
-  top: 100px;
+  left: 65px;
+  top: 90px;
   z-index: 2;
   color: #070707;
   opacity: 1;
@@ -57,10 +80,18 @@ a {
   text-align: center;
   margin: 0 auto;
 }
-.text-section2 {
+.quote {
+  font-size: 35px;
+  font-weight: bold;
+}
+.credit {
+  font-size: 25px;
+  font-weight: bold;
+} */
+/* .text-section2 {
   position: absolute;
-  right: 25px;
-  top: 300px;
+  right: 350px;
+  top: 350px;
   z-index: 1;
   background-color: #f0d6a8;
   width: 500px;
@@ -69,8 +100,8 @@ a {
 }
 .mid-right {
   position: absolute;
-  right: 25px;
-  top: 300px;
+  right: 350px;
+  top: 350px;
   z-index: 2;
   color: #070707;
   opacity: 1;
@@ -78,9 +109,12 @@ a {
   height: 200px;
   text-align: center;
   margin: 0 auto;
-}
+  font-size: large;
+  font-weight: bold;
+} */
 .color-block {
   height: 100vh;
+  width: 80vw;
   background-color: #a38a66;
   background-size: cover;
   background-attachment: fixed;
@@ -89,28 +123,63 @@ a {
 }
 .woman-typing {
   position: absolute;
-  right: 100px;
-  top: 700px;
   z-index: 1;
+  left: 50px;
+  top: 700px;
   height: 475px;
   width: 300px;
+  box-shadow: 20px 20px 5px #943b27;
 }
 .woman-typing2 {
   position: absolute;
-  left: 100px;
-  top: 700px;
   z-index: 1;
+  right: 325px;
+  top: 700px;
   height: 475px;
   width: 300px;
+  box-shadow: 20px 20px 5px #943b27;
 }
 .middle-text {
   font-size: 20px;
   color: #070707;
   position: absolute;
-  left: 525px;
+  left: 395px;
   top: 700px;
   z-index: 1;
   width: 300px;
   height: 475px;
   text-align: center;
+}
+.main-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  width: 80vw;
+  background-color: #a38a66;
+}
+.github {
+  font-size: 200px;
+  color: #48424d;
+  border-radius: 50%;
+  box-shadow: 20px 20px 5px #943b27;
+}
+
+.in {
+  font-size: 200px;
+  color: #48424d;
+  border-radius: 15px;
+  box-shadow: 20px 20px 5px #943b27;
+}
+.github:hover {
+  color: #943b27;
+  font-size: 250px;
+  border-radius: 50%;
+  box-shadow: 20px 20px 5px #48424d;
+}
+.in:hover {
+  color: #943b27;
+  font-size: 250px;
+  border-radius: 15px;
+  box-shadow: 20px 20px 5px #48424d;
 }
